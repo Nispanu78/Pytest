@@ -1,6 +1,13 @@
 # To run tests in verbose mode, run the tests with the -s flag
 # To have even more verbosity, run the tests with the -v flag
 
+# To run a specific test use -k flag followed by the name of the test
+# Examples:
+
+# pytest test_markers.py -s -v -k login
+# or
+# pytest test_markers.py -s -v -k "not login"
+
 import pytest
 
 # Here we define fixtures at module level

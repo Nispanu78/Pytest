@@ -1,3 +1,12 @@
+# To run tests in parallel mode pytest-xdist needs to be installed with pip
+# To run tests in parallel, use the -n flag followed by the number of processes you want to use
+
+# pytest test_selenium_webdriver_integration.py
+# To generate reports pytest-html needs to be installed with pip then run the test with the flag: --html=testreports.html
+
+# To use allure_reports install it with pip (pip install allure-pytest), run your test
+# then generate the HTML version of the report with allure serve ./allure_reports
+
 import time
 
 import pytest
